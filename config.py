@@ -4,7 +4,7 @@ import os
 class BaseConfig(object):
     DEBUG = False
     TESTING = False
-    DATABASE_URL = 'sqlite:///:memory:'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
 
 
 class DevelopmentConfig(BaseConfig):
@@ -16,4 +16,4 @@ class TestingConfig(BaseConfig):
 
 
 class ProductionConfig(BaseConfig):
-    DATABASE_URL = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
