@@ -3,7 +3,6 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-
 CONFIG_PATH = os.environ.get('CONFIG_PATH', 'config.DevelopmentConfig')
 PORT = os.environ.get('PORT', 7000)
 

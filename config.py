@@ -4,7 +4,7 @@ import os
 class BaseConfig(object):
     DEBUG = False
     TESTING = False
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///mu-server.db'
 
 
 class DevelopmentConfig(BaseConfig):
