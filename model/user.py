@@ -15,3 +15,5 @@ class User(db.Model):
         db.DateTime,
         default=datetime.datetime.utcnow,
         onupdate=datetime.datetime.utcnow)
+
+    name = db.Column(db.String(32), nullable=False)
