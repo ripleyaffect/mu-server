@@ -1,2 +1,2 @@
 release: scripts/manage.py db upgrade
-web: gunicorn app:app
+web: gunicorn webstart:app
