@@ -2,10 +2,11 @@ import datetime
 
 from app import db
 
-from model.user import User
+from .mixins import ModelUtils
+from .user import User
 
 
-class Task(db.Model):
+class Task(db.Model, ModelUtils):
     __tablename__ = 'tasks'
 
     id = db.Column(db.Integer, primary_key=True)

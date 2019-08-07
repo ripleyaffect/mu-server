@@ -2,8 +2,10 @@ import datetime
 
 from app import db
 
+from .mixins import ModelUtils
 
-class User(db.Model):
+
+class User(db.Model, ModelUtils):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
